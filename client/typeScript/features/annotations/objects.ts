@@ -1,0 +1,21 @@
+const profile = {
+  name: "alex",
+  age: 20,
+  coords: {
+    lat: 0,
+    lng: 15
+  },
+  name2: "nathan",
+  setAge(age: number): void {
+    this.age = age;
+  }
+};
+
+// let's deconstruct
+//const { age}: {age: number} = profile;
+
+const { age, name2 }: { age: number; name2: string } = profile;
+
+const {
+  coords: { lat, lng }
+}: { coords: { lat: number; lng: number } } = profile;
