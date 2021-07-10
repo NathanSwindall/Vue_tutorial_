@@ -1,0 +1,2 @@
+tsc --init    to create the tsc config file
+tsc -w        to compile every time there is a change in the file
